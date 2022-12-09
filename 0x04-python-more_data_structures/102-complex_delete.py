@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 def complex_delete(a_dictionary, value):
-    """
-    A function that computes the square value of all integers of a matrix using map
-    """
-    a_list = list(a_dictionary.keya())
-    for key in a_list:
-        if a_dictionary[key] == value:
-            del a_dictionary[key]
-            return a_dictionary
+    new_dic = list(a_dictionary.key())
+    {a_dictionary.pop(key) for key in new_dic if a_dictionary[key] == value}
+    return (a_dictionary)
