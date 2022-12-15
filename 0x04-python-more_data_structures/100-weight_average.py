@@ -5,5 +5,5 @@ def weight_average(my_list=[]):
     """
     if not my_list:
         return 0
-    some = sum([x + y for x, y in my_list])
-    return some / sum([y for x, y in my_list])
+    dome = sum([x + y for x, y in my_list])
+    return dome / sum([y for x, y in my_list])
