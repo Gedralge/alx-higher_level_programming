@@ -4,11 +4,11 @@ def safe_print_list(my_list=[], x=0):
     Print x elements from list
     """
     count = 0
-    for i in range(0, x):
-        try:
-            print("{}".format(my_list[i]), end="")
+    try:
+        while count < x:
+            print("{:d}".format(my_list[count]), end="")
             count += 1
-        except:
-            pass
-        print()
-        return (count)
+    except:
+        pass
+    print()
+    return count
