@@ -3,5 +3,5 @@
 class Square:
     """class for Square"""
     def __init__(self, size):
-        """ Initialize clss """
+        """ Initialize class """
         self.__size = size
