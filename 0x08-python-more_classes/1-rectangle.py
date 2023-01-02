@@ -16,29 +16,32 @@ class Rectangle:
 
         @property
         def width(self):
-            """Get width"""
+            """Getter"""
             return self.__width
 
         @width.setter
         def width(self, widthValue):
-            """Set width"""
-            if type(widthValue) != int:
-                raise TypeError("width must be an integer")
-            if widthValue < 0:
+            """Setter"""
+            if not insistance(value, int):
+                raise TypeError("width mus be an ineteger")
+            elif value < 0:
                 raise ValueError("width must be >= 0")
-            self.__width = widthValue
+            else:
+                self.__width = value
 
-            @property
-            def height(self):
-                """Get height"""
-                return self.height
 
-            @height.setter
-            def height(self, HeightValue):
-                """Set height"""
-                if type(HeightValue) != int:
-                    raise TypeError("height must be an integer")
-                if HeightValue < 0:
-                    raise ValueError("height must be >= 0")
-                self.__height = HeightValue
+                @property
+                def height(self):
+                    """Getter"""
+                    return self.___height
+
+                @height.setter
+                def height(self, value):
+                    """Setter"""
+                    if not insistance(value, int):
+                        raise TypeError("height must be an inetger")
+                    elif value < 0:
+                        raise ValueError("height must be >= 0")
+                    else:
+                        self.__height = value
 
