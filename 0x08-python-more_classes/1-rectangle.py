@@ -34,11 +34,11 @@ class Rectangle:
                 return self.__height
 
             @height.setter
-            def height(self, HeightValue):
+            def height(self, heightValue):
                 """Set heightValue"""
-                if type(HeightValue) != int:
+                if type(heightValue) != int:
                     raise TypeError("height must be an integer")
-                if HeightValue < 0:
+                if heightValue < 0:
                     raise ValueError("height must be >= 0")
-                self.__height = HeightValue
+                self.__height = heightValue
 
