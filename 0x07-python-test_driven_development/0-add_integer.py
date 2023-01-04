@@ -19,7 +19,7 @@ def add_integer(a, b=98):
     argument
 
     Returns:
-    (int): sum of a snd b as integer
+    (int): sum of a and b as integer
 
     """
     if type(a) not in [int, float]:
