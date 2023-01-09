@@ -4,6 +4,6 @@ module for BaseGeometry
 """
 
 
-def area(self):
-    """Raise an Exception"""
+class BaseGeometry():
+    """BaseGeometry class"""
     raise Exception("area() is not implemented")
