@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-
-"""
-module for BaseGeometry
-"""
+"""star a new class called BaseGeometry"""
 
 
-class  BaseGeometry:
+class BaseGeometry:
     """An empty class"""
     pass
