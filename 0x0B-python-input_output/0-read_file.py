@@ -5,8 +5,8 @@
 def read_file(filename=""):
 
     """ Reads file and prints contents """
-    with open(filename) as open_file:
-        contents = open_file.read()
-        print(contents, end="")
+    with open(fiename, encoding="UTF-8") as f:
+        string = f.read()
+        print(string, end="")
 
 
