@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-""" This defines read_file """
+""" Module to read and print contents of a file """
 
 
 def read_file(filename=""):
-    """ reads from a text file passed in as input """
-    if filename:
-        with open(filename, "r", encoding="utf-8") as f:
-            text = f.read()
-            print(text, end="")
+
+    """ Reads file and prints contents """
+    with open(filename) as open_file:
+        contents = open_file.read()
+        print(contents, end="")
+
 
