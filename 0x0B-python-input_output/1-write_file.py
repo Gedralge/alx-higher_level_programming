@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""defines the write file function"""
+"""
+Module to write to file
+"""
 
 
 def write_file(filename="", text=""):
-    """This function writes to a file and returns word-count"""
-    with open(filename, "W", encoding="UTF-8") as f:
-        return (f.write(text))
+    """Writes text to file"""
+    with open(filename, "W") as open_file:
+        open_file.write(text)
+        count = open_file.tell()
+        return count
